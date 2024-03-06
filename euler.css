@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.a_path,
+.b_path,
+.c_path,
+.d_path,
+.e_path {
+    justify-content: space-between;
+    display: flex;
+}
+
+.circle{
+    border-radius: 100%;
+    background-color: #fceb00;
+    width: 65px;
+    height: 65px;
+    text-align: center;
+}
+
+.circle p{
+    color: rgb(0, 0, 0);
+    font-size: 55px;
+}
+
+.circle_a{
+    position: absolute;
+    top: 40px;
+    left: 140px;
+    z-index: 1;
+}
+.circle_a:active{
+    box-shadow: 0 0 10px 10px #fff;
+}
+.circle_b{
+    position: absolute;
+    top: 320px;
+    left: 140px;
+    z-index: 1;
+}
+.circle_b:active{
+    box-shadow: 0 0 10px 10px #fff;
+}
+.circle_c{
+    position: absolute;
+    top: 40px;
+    left: 500px;
+    z-index: 1;
+}
+.circle_c:active{
+    box-shadow: 0 0 10px 10px #fff;
+}
+.circle_d{
+    position: absolute;
+    top: 320px;
+    left: 500px;
+    z-index: 1;
+}
+.circle_d:active{
+    box-shadow: 0 0 10px 10px #fff;
+}
+.circle_e{
+    position: absolute;
+    top: 320px;
+    left: 850px;
+    z-index: 1;
+}
+.circle_e:active{
+    box-shadow: 0 0 10px 10px #fff;
+}
+
+
+.line{
+    position: absolute;
+    width: 100px;
+    height: 10px;
+    background-color: #ffffff52;
+    border-radius: 20px;
+}
+
+/* #4 A - B */
+.line_a{
+    width: 360px;
+    top: 70px;
+    left: 175px;
+}
+
+.line_a:active{
+    background-color: red;
+    box-shadow: 0 0 10px 10px rgb(240, 160, 160);
+}
+
+
+/* #1 A - C */
+.line_b{
+    width: 285px;
+    top: 210px;
+    left: 35px;
+    transform: rotate(90deg);
+}
+
+.line_b:active{
+    background-color: red;
+    box-shadow: 0 0 10px 10px rgb(240, 160, 160);
+}
+
+/* #3 D - A */
+.line_c{
+    width: 450px;
+    top: 210px;
+    left: 130px;
+    transform: rotate(38deg);
+}
+
+.line_c:active{
+    background-color: red;
+    box-shadow: 0 0 10px 10px rgb(240, 160, 160);
+}
+
+/* #2 C - D */
+.line_d{
+    width: 360px;
+    top: 350px;
+    left: 175px;
+}
+
+.line_d:active{
+    background-color: red;
+    box-shadow: 0 0 10px 10px rgb(240, 160, 160);
+}
+
+/* #5 B - D */
+.line_e{
+    width: 290px;
+    top: 210px;
+    left: 385px;
+    transform: rotate(90deg);
+}
+
+.line_e:active{
+    background-color: red;
+    box-shadow: 0 0 10px 10px rgb(240, 160, 160);
+}
+
+.line_f{
+    width: 355px;
+    top: 350px;
+    left: 530px;
+}
+
+.line_f:active{
+    background-color: red;
+    box-shadow: 0 0 10px 10px rgb(240, 160, 160);
+}
+
+.line_g{
+    width: 450px;
+    top: 205px;
+    left: 480px;
+    transform: rotate(38deg);
+}
+
+.line_g:active{
+    background-color: red;
+    box-shadow: 0 0 10px 10px rgb(240, 160, 160);
+}

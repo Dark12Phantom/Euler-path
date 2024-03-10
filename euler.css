@@ -1,14 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #000;
 }
 
-.container{
+.container {
     position: relative;
     display: flex;
     justify-content: space-around;
@@ -24,157 +24,174 @@ body{
     display: flex;
 }
 
-.circle{
+.circle {
     border-radius: 100%;
     background-color: #fceb00;
     width: 65px;
     height: 65px;
     text-align: center;
+    transition: 0.5s;
 }
 
-.circle p{
+.circle p {
     color: rgb(0, 0, 0);
     font-size: 55px;
 }
 
-.circle_a{
+#circle_a {
     position: absolute;
     top: 40px;
     left: 140px;
     z-index: 1;
 }
-.circle_a:active{
+
+#circle_a.active {
     box-shadow: 0 0 10px 10px #fff;
 }
-.circle_b{
+
+#circle_b {
     position: absolute;
     top: 320px;
     left: 140px;
     z-index: 1;
 }
-.circle_b:active{
+
+#circle_b.active {
     box-shadow: 0 0 10px 10px #fff;
 }
-.circle_c{
+
+#circle_c {
     position: absolute;
     top: 40px;
     left: 500px;
     z-index: 1;
 }
-.circle_c:active{
+
+#circle_c.active {
     box-shadow: 0 0 10px 10px #fff;
 }
-.circle_d{
+
+#circle_c.active_2 {
+    box-shadow: 0 0 19px 10px #fa0238;
+}
+
+#circle_d {
     position: absolute;
     top: 320px;
     left: 500px;
     z-index: 1;
 }
-.circle_d:active{
+
+#circle_d.active {
     box-shadow: 0 0 10px 10px #fff;
 }
-.circle_e{
+
+#circle_d.active_2 {
+    box-shadow: 0 0 19px 10px #fa0238;
+}
+
+#circle_e {
     position: absolute;
     top: 320px;
     left: 850px;
     z-index: 1;
 }
-.circle_e:active{
+
+#circle_e.active {
     box-shadow: 0 0 10px 10px #fff;
 }
 
-
-.line{
+.line {
     position: absolute;
     width: 100px;
     height: 10px;
     background-color: #ffffff52;
     border-radius: 20px;
+    transition: 0.5s;
 }
 
+.line.active {
+    box-shadow: 0 0 10px 10px rgb(240, 160, 160);
+}
+
+.line .stroke {
+    height: 10px;
+    width: 100%;
+    background: inherit;
+}
+
+.line .stroke.active {
+    animation: animate 2s forwards;
+    background-image: linear-gradient(to right, #48ff00, #00ffc8);
+}
+
+
 /* #4 A - B */
-.line_a{
+#line_a {
     width: 360px;
     top: 70px;
     left: 175px;
 }
 
-.line_a:active{
-    background-color: red;
-    box-shadow: 0 0 10px 10px rgb(240, 160, 160);
-}
-
 
 /* #1 A - C */
-.line_b{
+#line_b {
     width: 285px;
     top: 210px;
     left: 35px;
     transform: rotate(90deg);
 }
 
-.line_b:active{
-    background-color: red;
-    box-shadow: 0 0 10px 10px rgb(240, 160, 160);
-}
-
 /* #3 D - A */
-.line_c{
+#line_c {
     width: 450px;
     top: 210px;
     left: 130px;
-    transform: rotate(38deg);
-}
-
-.line_c:active{
-    background-color: red;
-    box-shadow: 0 0 10px 10px rgb(240, 160, 160);
+    transform: rotate(-141deg);
 }
 
 /* #2 C - D */
-.line_d{
+#line_d {
     width: 360px;
     top: 350px;
     left: 175px;
 }
 
-.line_d:active{
-    background-color: red;
-    box-shadow: 0 0 10px 10px rgb(240, 160, 160);
-}
-
 /* #5 B - D */
-.line_e{
+#line_e {
     width: 290px;
     top: 210px;
     left: 385px;
     transform: rotate(90deg);
 }
 
-.line_e:active{
-    background-color: red;
-    box-shadow: 0 0 10px 10px rgb(240, 160, 160);
-}
-
-.line_f{
+/* #6 D - E */
+#line_f {
     width: 355px;
     top: 350px;
     left: 530px;
 }
 
-.line_f:active{
-    background-color: red;
-    box-shadow: 0 0 10px 10px rgb(240, 160, 160);
-}
-
-.line_g{
+#line_g {
     width: 450px;
     top: 205px;
     left: 480px;
-    transform: rotate(38deg);
+    transform: rotate(-141deg);
 }
 
-.line_g:active{
-    background-color: red;
+#line_g.active {
     box-shadow: 0 0 10px 10px rgb(240, 160, 160);
+}
+
+
+
+
+@keyframes animate {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
 }

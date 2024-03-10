@@ -1,63 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Euler Path</title>
     <link rel="stylesheet" href="euler.css">
 </head>
+
 <body>
     <div class="container">
 
-        <div class="a_path">
+        <div class="a_path" id="path">
 
-            <div class="circle circle_a">
+            <div id="circle_a" class="circle circle1">
                 <p>A</p>
             </div>
-            <div class="line line_a"></div>
+            <div id="line_a" class="line">
+                <div id="stroke_a" class="stroke"></div>
+            </div>
 
         </div>
 
         <div class="b_path">
 
-            <div class="circle circle_b">
+            <div id="circle_b" class="circle circle2">
                 <p>C</p>
             </div>
-            <div class="line line_b"></div>
+            <div id="line_b" class="line">
+                <div id="stroke_b" class="stroke"></div>
+            </div>
 
         </div>
 
         <div class="c_path">
 
-            <div class="circle circle_c">
+            <div id="circle_c" class="circle circle3">
                 <p>B</p>
             </div>
-            <div class="line line_c"></div>
+            <div id="line_c" class="line">
+                <div id="stroke_c" class="stroke"></div>
+            </div>
 
         </div>
 
         <div class="d_path">
 
-            <div class="circle circle_d">
+            <div id="circle_d" class="circle circle4">
                 <p>D</p>
             </div>
-            <div class="line line_d"></div>
+            <div id="line_d" class="line">
+                <div id="stroke_d" class="stroke"></div>
+            </div>
 
         </div>
 
         <div class="e_path">
 
-            <div class="circle circle_e">
+            <div id="circle_e" class="circle circle5">
                 <p>E</p>
             </div>
-            <div class="line line_e"></div>
-            <div class="line line_f"></div>
-            <div class="line line_g"></div>
-            <div class="line line_h"></div>
-            
+            <div id="line_e" class="line">
+                <div id="stroke_e" class="stroke"></div>
+            </div>
+            <div id="line_f" class="line">
+                <div id="stroke_f" class="stroke"></div>
+            </div>
+            <div id="line_g" class="line">
+                <div id="stroke_g" class="stroke"></div>
+            </div>
+
         </div>
     </div>
 
-    <script src="euler.js"></script>
+
+
+
 </body>
+<script src="euler.js"></script>
+
+
 </html>

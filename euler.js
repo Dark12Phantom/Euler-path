@@ -27,49 +27,70 @@ function activateElementsWithDelay() {
     setTimeout(function () {
         line1.classList.add('active');
         stroke1.classList.add('active');
-    }, 1500);
+    }, 0);
+    
+    setTimeout(function(){
+        circle2.classList.add('active');
+    }, 1000);
 
     setTimeout(function () {
         line2.classList.add('active');
         stroke2.classList.add('active');
-        circle2.classList.add('active');
-    }, 3000);
+        
+    }, 1500);
+
+    setTimeout(function(){
+        circle3.classList.add('active');
+    }, 2400);
 
     setTimeout(function () {
         line3.classList.add('active');
         stroke3.classList.add('active');
-        circle3.classList.add('active');
-    }, 4500);
+    }, 3000);
+
+    setTimeout(function(){
+        circle1.classList.add('active_2');
+    }, 4200);
+
+    setTimeout(function(){
+        circle4.classList.add('active');
+    }, 5500);
 
     setTimeout(function () {
         line4.classList.add('active');
         stroke4.classList.add('active');
-        circle4.classList.add('active');
-    }, 6000);
+    }, 4500);
 
     setTimeout(function () {
         line5.classList.add('active');
         stroke5.classList.add('active');
-        circle3.classList.remove('active');
+    }, 6000);
+
+    setTimeout(function () {
         circle3.classList.add('active_2');
-    }, 7500);
+    }, 7300);
 
     setTimeout(function () {
         line6.classList.add('active');
         stroke6.classList.add('active');
+    }, 7500);
+
+    setTimeout(function () {
         circle5.classList.add('active');
-    }, 9000);
+    }, 8800);
 
     setTimeout(function () {
         line7.classList.add('active');
         stroke7.classList.add('active');
-        circle4.classList.remove('active');
+    }, 9000);
+
+    setTimeout(function () {
         circle4.classList.add('active_2');
-    }, 10500);
+    }, 10300);
 
 }
 document.querySelector('.a_path').addEventListener('click', function () {
     circle1.classList.add('active');
-
     activateElementsWithDelay();
+
 });

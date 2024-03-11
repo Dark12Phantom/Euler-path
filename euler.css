@@ -48,6 +48,9 @@ body {
 #circle_a.active {
     box-shadow: 0 0 10px 10px #fff;
 }
+#circle_a.active_2 {
+    box-shadow: 0 0 10px 10px #fa0238;
+}
 
 #circle_b {
     position: absolute;
@@ -72,7 +75,7 @@ body {
 }
 
 #circle_c.active_2 {
-    box-shadow: 0 0 19px 10px #fa0238;
+    box-shadow: 0 0 10px 10px #fa0238;
 }
 
 #circle_d {

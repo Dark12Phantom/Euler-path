@@ -25,41 +25,34 @@ var btn = document.querySelector('#path');
 
 function activateElementsWithDelay() {
     setTimeout(function () {
-        line1.classList.add('active');
-        stroke1.classList.add('active');
-    }, 0);
-    
-    setTimeout(function(){
         circle2.classList.add('active');
     }, 1000);
 
     setTimeout(function () {
         line2.classList.add('active');
         stroke2.classList.add('active');
-        
     }, 1500);
 
-    setTimeout(function(){
+    setTimeout(function () {
         circle3.classList.add('active');
-    }, 2400);
+    }, 2500);
 
     setTimeout(function () {
         line3.classList.add('active');
         stroke3.classList.add('active');
     }, 3000);
 
-    setTimeout(function(){
+    setTimeout(function () {
         circle1.classList.add('active_2');
-    }, 4200);
-
-    setTimeout(function(){
-        circle4.classList.add('active');
-    }, 5500);
-
+    }, 4250);
     setTimeout(function () {
         line4.classList.add('active');
         stroke4.classList.add('active');
     }, 4500);
+
+    setTimeout(function () {
+        circle4.classList.add('active');
+    }, 5500);
 
     setTimeout(function () {
         line5.classList.add('active');
@@ -68,29 +61,30 @@ function activateElementsWithDelay() {
 
     setTimeout(function () {
         circle3.classList.add('active_2');
-    }, 7300);
+    }, 7000)
+
 
     setTimeout(function () {
         line6.classList.add('active');
         stroke6.classList.add('active');
     }, 7500);
-
     setTimeout(function () {
         circle5.classList.add('active');
-    }, 8800);
+    }, 8350);
 
     setTimeout(function () {
         line7.classList.add('active');
         stroke7.classList.add('active');
     }, 9000);
-
     setTimeout(function () {
         circle4.classList.add('active_2');
-    }, 10300);
+    }, 10250);
 
 }
 document.querySelector('.a_path').addEventListener('click', function () {
     circle1.classList.add('active');
-    activateElementsWithDelay();
+    line1.classList.add('active');
+    stroke1.classList.add('active');
 
+    activateElementsWithDelay();
 });

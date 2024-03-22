@@ -24,6 +24,8 @@ body {
     display: flex;
 }
 
+/* MAIN CIRCLE */
+
 .circle {
     border-radius: 100%;
     background-color: #fceb00;
@@ -38,6 +40,9 @@ body {
     font-size: 55px;
 }
 
+
+/* INDIVIDUAL CIRCLE STYLE */
+
 #circle_a {
     position: absolute;
     top: 40px;
@@ -48,7 +53,6 @@ body {
 #circle_a.active {
     box-shadow: 0 0 10px 10px #fff;
 }
-
 #circle_a.active_2 {
     box-shadow: 0 0 10px 10px #fa0238;
 }
@@ -62,10 +66,6 @@ body {
 
 #circle_b.active {
     box-shadow: 0 0 10px 10px #fff;
-}
-
-#circle_a.active_2 {
-    box-shadow: 0 0 10px 10px #fa0238;
 }
 
 #circle_c {
@@ -82,7 +82,6 @@ body {
 #circle_c.active_2 {
     box-shadow: 0 0 10px 10px #fa0238;
 }
-
 
 #circle_d {
     position: absolute;
@@ -110,6 +109,9 @@ body {
     box-shadow: 0 0 10px 10px #fff;
 }
 
+
+/* MAIN LINES */
+
 .line {
     position: absolute;
     width: 100px;
@@ -133,6 +135,7 @@ body {
     background-image: linear-gradient(to right, #48ff00, #00ffc8);
 }
 
+/* INDIVIDUAL LINE STYLING */
 
 /* #4 A - B */
 #line_a {
@@ -192,7 +195,7 @@ body {
 }
 
 
-
+/* ANIMATION */
 
 @keyframes animate {
     0% {
